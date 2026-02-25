@@ -4,5 +4,5 @@ services:
     image: mrarthurexe/langchain-multiagent:latest
     stdin_open: true
     tty: true
-    env_file:
-      - stack.env
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
